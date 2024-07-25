@@ -42,14 +42,14 @@ A Coder and a Machine learning enthusiast<br>
 <p align="left">
    <a href="mailto:mehtahruday@gmail.com"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg" alt="gmail" height="50" width="35" /></a> &nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/hrudaymehta/" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="hrudaymehta height="60" width="35" /></a> &nbsp;&nbsp;
-  <a href="https://www.instagram.com/hruday_mehta/"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="bhanot_kushal" height="50" width="35" /></a> &nbsp;&nbsp;
+  <a href="https://www.instagram.com/hruday_mehta/"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="" height="50" width="35" /></a> &nbsp;&nbsp;
 <!--     <a href="https://www.snapchat.com/add/hrudayangamnmeh"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/snapchat.svg" alt="bhanot_kushal" height="50" width="35" /></a> &nbsp;&nbsp; -->
 
 </p>
 
 ### Check out my coding skills
 <p align="left">
-  <a href="https://www.hackerrank.com/" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg" alt="kushalbhanot" height="60" width="45" /></a> &nbsp;&nbsp;
+  <a href="https://www.hackerrank.com/" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg" alt="" height="60" width="45" /></a> &nbsp;&nbsp;
 </p>
 
 ### Extras🎈🎈
