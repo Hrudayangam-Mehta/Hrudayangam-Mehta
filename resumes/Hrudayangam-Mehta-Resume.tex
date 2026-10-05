@@ -1,0 +1,100 @@
+% EDIT THIS FILE DIRECTLY. It is the source for the resume PDF.
+% Build from the repository root: python scripts/build_latex_resume.py
+% The build does not regenerate or overwrite this .tex file.
+% Keep facts consistent with content/profile.json when changing shared details.
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\hypersetup{
+  pdftitle={Hrudayangam Mehta - Resume},
+  pdfauthor={Hrudayangam Mehta},
+  pdfsubject={Machine learning research and engineering}
+}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{1em}
+\setlist[itemize]{leftmargin=1.1em, label=\textbullet,
+  itemsep=3pt, topsep=4pt, parsep=0pt, partopsep=0pt}
+\raggedright
+\urlstyle{same}
+
+% Plain text structure preserves reading order; no tables, columns, or icons.
+\newcommand{\resumesection}[1]{%
+  \par\vspace{9pt}
+  {\normalsize\bfseries #1}\par\vspace{3pt}
+  \hrule height 0.4pt\vspace{5pt}
+}
+\newcommand{\role}[3]{%
+  \textbf{#1}\par
+  #2 \textbar{} #3\par
+}
+
+\begin{document}
+
+{\LARGE\bfseries Hrudayangam Mehta}\par\vspace{4pt}
+{\small
+Binghamton, NY \textbar{}
+\href{mailto:mehtahruday@gmail.com}{mehtahruday@gmail.com} \textbar{}
++1 (607) 601-0523\par
+\href{https://github.com/Hrudayangam}{github.com/Hrudayangam} \textbar{}
+\href{https://www.linkedin.com/in/hrudaymehta/}{linkedin.com/in/hrudaymehta} \textbar{}
+\href{https://hrudaymehta.vercel.app/}{hrudaymehta.vercel.app}\par
+}
+
+\resumesection{RESEARCH EXPERIENCE}
+
+\role{Research Assistant}{iDRAMA Lab, Binghamton University}{TBD -- Present}
+% The iDRAMA appointment start date is unconfirmed; do not infer it from the PhD date.
+\begin{itemize}
+  \item Research AI applications in computational social science, preference optimization,
+    and AI alignment.
+  \item Co-authored \href{https://aclanthology.org/2025.emnlp-main.1792/}{\textit{Evaluating Large Language Models for Detecting Antisemitism}}
+    (EMNLP 2025): evaluated eight open-source LLMs on 11,315 annotated posts;
+    compared prompting and decoding strategies and analyzed classification errors.
+  \item Co-authored \href{https://ojs.aaai.org/index.php/AAAI/article/view/41198}{\textit{From Woofs to Words: Towards Intelligent Robotic Guide Dogs with Verbal Communication}}
+    (AAAI 2026; equal contribution), combining LLM dialogue, symbolic task planning,
+    and verbal explanations. The multi-turn system achieved 94.8\% task-specification
+    accuracy on 77 simulated service requests.
+  \item Co-inventor of \href{https://binghamton.technologypublisher.com/tech?title=AI-Driven_Floor_Plan_Understanding_for_Indoor\%2fOutdoor_Navigation}{\textit{AI-Driven Floor Plan Understanding for Indoor/Outdoor Navigation}}.
+    U.S. provisional patent application 63/884,317, filed September 18, 2025.
+\end{itemize}
+
+\vspace{3pt}
+\role{Graduate Research Assistant}{AIR Group, Binghamton University}{Aug 2023 -- May 2024}
+\begin{itemize}
+  \item Integrated speech-to-text into a robotic guide-dog interface for spoken interaction.
+  \item Co-authored \href{https://www.elspub.com/doi/10.55092/rl20250011}{\textit{Vision language models can parse floor plan maps}}
+    (\textbf{Robot Learning (ELSP), 2025}; equal contribution). Evaluated GPT-4o and
+    Claude 3.5 Sonnet on floor-plan parsing and navigation action sequences;
+    analyzed failures across map size, task complexity, and label density.
+\end{itemize}
+
+\resumesection{EDUCATION}
+
+\textbf{PhD in Computer Science}, Binghamton University, SUNY\par
+Aug 2024 -- Present \textbar{} Adviser: Jeremy Blackburn; iDRAMA Lab\par
+\vspace{5pt}
+\textbf{MS in Computer Science}, Binghamton University, SUNY\par
+Jan 2023 -- May 2024 \textbar{} Artificial Intelligence track; GPA: 3.83/4.00\par
+\vspace{5pt}
+\textbf{BTech in Computer Science and Engineering}, VIT Bhopal\par
+Jul 2019 -- May 2023 \textbar{} Artificial Intelligence and Machine Learning\par
+
+\resumesection{TECHNICAL SKILLS}
+
+\textbf{Programming:} Python, SQL, C, C++, JavaScript, TypeScript\par
+\vspace{3pt}
+\textbf{Machine learning:} LLM evaluation, vision-language models, classification,
+prompting and decoding experiments, error analysis, OpenCV\par
+\vspace{3pt}
+\textbf{Data and software:} PostgreSQL, MongoDB, Faktory, Flask, Git, Linux, AWS\par
+
+\end{document}

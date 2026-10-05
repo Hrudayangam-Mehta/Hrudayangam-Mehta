@@ -76,9 +76,18 @@ def main():
         assert degree["dates"] in html and degree["dates"] in readme
     assert "63/884,317" in html and "63/884,317" in readme
     assert "provisional patent application" in html
+    articles = re.findall(r'<article class="entry">(.*?)</article>', html, re.S)
+    current_ra = next(a for a in articles if "iDRAMA Lab" in a and "Research Assistant" in a)
+    air_ra = next(a for a in articles if "AIR" in a and "Graduate Research Assistant" in a)
+    assert "63/884,317" in current_ra and "From Woofs to Words" in current_ra
+    assert "Aug 2023 - May 2024" in air_ra
+    assert "Vision language models can parse floor plan maps" in air_ra
+    assert "https://www.elspub.com/doi/10.55092/rl20250011" in air_ra
+    assert any("iSmriti" in a for a in articles), "iSmriti must remain on the website"
     assert not any("anthology" in p.name.lower() for p in (ROOT / "website").rglob("*"))
     print("PASS: shared content, all three publications, degree dates, provisional patent, and case-sensitive local links.")
     print("PASS: no table layout, preprint links, placeholder actions, or application-only CV in public website output.")
+    print("PASS: corrected AIR dates/paper, current-RA AAAI/patent, and website-only iSmriti.")
 
 
 if __name__ == "__main__":

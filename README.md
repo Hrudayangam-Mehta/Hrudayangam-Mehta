@@ -4,7 +4,7 @@ I am a PhD student in Computer Science at Binghamton University, advised by Jere
 
 [Email](mailto:mehtahruday@gmail.com) · [GitHub](https://github.com/Hrudayangam) · [Google Scholar](https://scholar.google.com/citations?user=v1naXqEAAAAJ&hl=en) · [ResearchGate](https://www.researchgate.net/profile/Hrudayangam-Mehta/publications) · [LinkedIn](https://www.linkedin.com/in/hrudaymehta/) · [Website](https://hrudaymehta.vercel.app/)
 
-[Resume](resumes/Hrudayangam-Mehta-Resume.pdf)
+[Resume](resumes/Hrudayangam-Mehta-Resume.pdf) · [LaTeX source](resumes/Hrudayangam-Mehta-Resume.tex)
 
 ## Research
 

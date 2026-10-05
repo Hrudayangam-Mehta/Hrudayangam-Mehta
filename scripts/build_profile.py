@@ -69,8 +69,14 @@ def main() -> None:
         )
 
     experience = []
+    references = [(p["title"], p["url"]) for p in pubs] + [(patent["title"], patent["url"])]
+    def experience_bullet(text):
+        result = escape(text)
+        for title, url in references:
+            result = result.replace(escape(title), link(url, title))
+        return result
     for item in profile["experience"]:
-        bullets = "".join(f"<li>{escape(b)}</li>" for b in item["bullets"])
+        bullets = "".join(f"<li>{experience_bullet(b)}</li>" for b in item["bullets"])
         experience.append(
             f'<article class="entry"><h3>{escape(item["title"])}</h3>'
             f'<p>{escape(item["organization"])}</p>'
@@ -181,7 +187,7 @@ def main() -> None:
     # Use relative documents because this repository contains the generated files.
     md = [f'# {profile["name"]}', '', profile["summary"], '']
     md.append(' · '.join(f'[{x["label"]}]({x["url"]})' for x in profile["links"]))
-    md += ['', '[Resume](resumes/Hrudayangam-Mehta-Resume.pdf)', '', '## Research', '',
+    md += ['', '[Resume](resumes/Hrudayangam-Mehta-Resume.pdf) · [LaTeX source](resumes/Hrudayangam-Mehta-Resume.tex)', '', '## Research', '',
            '- AI applications in computational social science', '- Preference optimization and AI alignment',
            '- Language-model evaluation and vision-language reasoning', '', '## Publications', '', '\\* Equal contribution.', '']
     for pub in pubs:
