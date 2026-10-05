@@ -1,0 +1,12 @@
+.tools/
+.worktrees/
+reference/
+validation/
+handoff/
+__pycache__/
+*.pyc
+resumes/*.log
+resumes/*.aux
+resumes/*.out
+resumes/previews/
+resumes/Hrudayangam-Mehta-Anthology-CV.*

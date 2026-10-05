@@ -1,0 +1,176 @@
+{
+  "updated": "2026-10-05",
+  "name": "Hrudayangam Mehta",
+  "display_name": "Hrudayangam Mehta",
+  "short_name": "Hruday Mehta",
+  "email": "mehtahruday@gmail.com",
+  "phone": "+1 (607) 601-0523",
+  "location": "Binghamton, New York",
+  "headline": "PhD student in Computer Science",
+  "affiliation": "Binghamton University",
+  "summary": "I am a PhD student in Computer Science at Binghamton University, advised by Jeremy Blackburn, and a research assistant in the iDRAMA Lab. I work on AI applications in computational social science, preference optimization, and AI alignment. My published research covers language-model evaluation, vision-language reasoning, and human-robot interaction.",
+  "anthology_summary": "PhD researcher in the iDRAMA Lab at Binghamton University, advised by Jeremy Blackburn. Work focuses on LLM evaluation, AI applications in computational social science, preference optimization, and AI alignment. Published research examines policy-guided classification, spatial reasoning, and dialogue task specification.",
+  "links": [
+    {
+      "label": "Email",
+      "url": "mailto:mehtahruday@gmail.com"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Hrudayangam"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=v1naXqEAAAAJ&hl=en"
+    },
+    {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Hrudayangam-Mehta/publications"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/hrudaymehta/"
+    },
+    {
+      "label": "Website",
+      "url": "https://hrudaymehta.vercel.app/"
+    }
+  ],
+  "skills": [
+    {
+      "label": "Programming",
+      "items": [
+        "Python",
+        "SQL",
+        "C",
+        "C++",
+        "JavaScript",
+        "TypeScript"
+      ]
+    },
+    {
+      "label": "Machine learning",
+      "items": [
+        "LLM evaluation",
+        "vision-language models",
+        "classification",
+        "prompting and decoding experiments",
+        "error analysis",
+        "OpenCV"
+      ]
+    },
+    {
+      "label": "Data and software",
+      "items": [
+        "PostgreSQL",
+        "MongoDB",
+        "Faktory",
+        "Flask",
+        "Git",
+        "Linux",
+        "AWS"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Binghamton University, SUNY",
+      "degree": "PhD in Computer Science",
+      "dates": "Aug 2024 - Present",
+      "detail": "Adviser: Jeremy Blackburn; iDRAMA Lab",
+      "source": "User confirmation, 2026-10-05"
+    },
+    {
+      "institution": "Binghamton University, SUNY",
+      "degree": "MS in Computer Science",
+      "dates": "Jan 2023 - May 2024",
+      "detail": "Artificial Intelligence track; GPA: 3.83/4.00",
+      "source": "User confirmation, 2026-10-05"
+    },
+    {
+      "institution": "Vellore Institute of Technology, Bhopal",
+      "degree": "BTech in Computer Science and Engineering",
+      "dates": "Jul 2019 - May 2023",
+      "detail": "Specialization in Artificial Intelligence and Machine Learning",
+      "source": "User-provided Hruday Mehta Resume.pdf"
+    }
+  ],
+  "experience": [
+    {
+      "organization": "iDRAMA Lab, Binghamton University",
+      "title": "Research Assistant",
+      "dates": "TBD - Present",
+      "location": "Binghamton, New York",
+      "bullets": [
+        "Research AI applications in computational social science, preference optimization, and AI alignment.",
+        "Co-authored EMNLP 2025 research evaluating eight open-source LLMs on policy-guided classification and generated explanations."
+      ],
+      "source": "Current role and interests confirmed by user, 2026-10-05; EMNLP publication"
+    },
+    {
+      "organization": "Autonomous Intelligent Robotics (AIR) Group, Binghamton University",
+      "title": "Graduate Research Assistant",
+      "dates": "Aug 2023 - TBD",
+      "location": "Binghamton, New York",
+      "bullets": [
+        "Integrated speech-to-text into a robotic guide-dog interface for spoken interaction.",
+        "Contributed to vision-language model research on floor-plan parsing and navigation action generation.",
+        "Co-authored research combining LLM dialogue, symbolic planning, and verbal explanations for robotic assistance."
+      ],
+      "source": "User-provided resume; final floor-plan and robotic guide-dog publications"
+    },
+    {
+      "organization": "iSmriti, IIT Kanpur",
+      "title": "Summer Intern",
+      "dates": "Jun - Jul 2019",
+      "location": "Kanpur, India",
+      "bullets": [
+        "Built a Raspberry Pi Zero obstacle-avoidance robot and a Java, TypeScript, and React collaboration prototype.",
+        "Team runner-up for an AI and IoT project."
+      ],
+      "source": "User-provided resume"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Policy-guided LLM evaluation",
+      "url": "https://aclanthology.org/2025.emnlp-main.1792/",
+      "description": "EMNLP 2025",
+      "bullets": [
+        "Co-authored an evaluation of eight open-source LLMs on 11,315 annotated posts for policy-guided antisemitism detection.",
+        "Compared prompting and decoding strategies, including Guided-CoT and self-consistency; analyzed classification errors and generated explanations."
+      ]
+    },
+    {
+      "name": "Vision-language reasoning for navigation",
+      "url": "https://www.elspub.com/doi/10.55092/rl20250011",
+      "description": "Robot Learning, 2025; equal contribution",
+      "bullets": [
+        "Co-authored evaluations of GPT-4o and Claude 3.5 Sonnet on floor-plan parsing and navigation action sequences.",
+        "Studied failures across map size, task complexity, and label density; co-inventor on the associated U.S. provisional patent application."
+      ]
+    },
+    {
+      "name": "Dialogue and planning for robotic guide dogs",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/41198",
+      "description": "AAAI 2026; equal contribution",
+      "bullets": [
+        "Co-authored research connecting LLM dialogue with symbolic task planning and plan/scene verbalization.",
+        "Evaluated task specification on 77 simulated service requests; the multi-turn system achieved 94.8% accuracy."
+      ]
+    }
+  ],
+  "confirmation_needed": [
+    "Start date for current iDRAMA Research Assistant role: TBD.",
+    "End date for AIR Graduate Research Assistant role: TBD.",
+    "Exact venue and year for the additional accepted OpenReview version: TBD."
+  ],
+  "advisor": {
+    "name": "Jeremy Blackburn",
+    "url": "https://www.binghamton.edu/computer-science/people/profile.html?id=jblackbu"
+  },
+  "lab": {
+    "name": "iDRAMA Lab",
+    "url": "https://idrama.science/"
+  }
+}
