@@ -9,4 +9,5 @@ resumes/*.log
 resumes/*.aux
 resumes/*.out
 resumes/previews/
+resumes/validation.json
 resumes/Hrudayangam-Mehta-Anthology-CV.*
