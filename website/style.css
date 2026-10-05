@@ -1,0 +1,93 @@
+:root {
+  --paper: #ffffff;
+  --ink: #262a30;
+  --muted: #5b626d;
+  --link: #245b91;
+  --rule: #dce1e7;
+  --focus: #995600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-size: 16px;
+  line-height: 1.65;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; border-radius: 1px; }
+p { margin: 0 0 .75rem; }
+h1, h2, h3 { line-height: 1.3; }
+h1 { margin: 1.1rem 0 .7rem; font-size: 1.85rem; font-weight: 650; letter-spacing: -.045rem; }
+h2 { margin: 0 0 1.1rem; font-size: 1.55rem; font-weight: 600; letter-spacing: -.025rem; }
+h3 { margin: 0 0 .4rem; font-size: 1.05rem; font-weight: 650; }
+ul { padding-inline-start: 1.3rem; }
+li { margin-block-end: .45rem; }
+.page { display: grid; grid-template-columns: 225px minmax(0, 720px); gap: 66px; max-width: 1080px; margin: 0 auto; padding: 64px 32px 30px; }
+.profile { position: sticky; top: 32px; align-self: start; font-size: .925rem; }
+.portrait { display: block; width: 136px; height: 136px; object-fit: cover; border-radius: 50%; }
+.role { margin-block-end: .65rem; line-height: 1.55; }
+.location, .meta, .note { color: var(--muted); }
+.social-links { list-style: none; padding: 0; margin: 1.1rem 0; }
+.social-links li { margin: .15rem 0; }
+.social-links a, nav a { display: inline-block; min-height: 28px; }
+.document-links { margin: 1.2rem 0; line-height: 1.9; }
+nav { border-block-start: 1px solid var(--rule); padding-block-start: 1rem; display: flex; flex-direction: column; align-items: start; }
+nav a { color: var(--muted); text-decoration: none; margin: .1rem 0; }
+nav a:hover { color: var(--link); text-decoration: underline; }
+main { min-width: 0; }
+main:focus { outline: none; }
+section { scroll-margin-top: 24px; border-block-start: 1px solid var(--rule); padding-block-start: 28px; margin-block-end: 34px; }
+section:first-child { border: 0; padding-block-start: 0; }
+.intro { font-size: 1.05rem; }
+.publications { list-style: none; padding: 0; margin: 0; }
+.publication { margin-block-end: 1.75rem; }
+.publication:last-child { margin-block-end: 0; }
+.publication h3 { font-size: 1.1rem; }
+.publication p { margin-block-end: .4rem; }
+.publication h3 a { text-decoration: none; }
+.publication h3 a:hover { text-decoration: underline; }
+.venue { color: var(--muted); font-size: .85rem; font-weight: 650; }
+.authors { font-size: .93rem; }
+.paper-links, .note { font-size: .875rem; }
+.paper-links a { display: inline-block; padding-block: 2px; }
+.entry { margin-block-end: 1.4rem; }
+.entry p { margin-block-end: .2rem; }
+.entry ul { margin-block: .6rem 0; }
+.entry:last-child { margin-block-end: 0; }
+.meta { font-size: .9rem; }
+footer { padding-block: .8rem; color: var(--muted); font-size: .8rem; }
+.skip-link { position: absolute; top: -90px; left: 1rem; z-index: 10; background: var(--paper); padding: .6rem 1rem; }
+.skip-link:focus { top: .5rem; }
+
+@media (max-width: 850px) {
+  .page { grid-template-columns: 190px minmax(0, 1fr); gap: 36px; padding-inline: 26px; }
+  h1 { font-size: 1.65rem; }
+}
+
+@media (max-width: 640px) {
+  .page { display: block; padding: 30px 22px 20px; }
+  .profile { position: static; margin-block-end: 32px; }
+  .portrait { width: 112px; height: 112px; }
+  h1 { font-size: 1.85rem; margin-block-start: .8rem; }
+  h1 br { display: none; }
+  .social-links { display: flex; flex-wrap: wrap; column-gap: 1.15rem; row-gap: .2rem; margin-block: .8rem; }
+  .social-links li { margin: 0; }
+  nav { flex-direction: row; flex-wrap: wrap; gap: .25rem 1rem; }
+  .document-links { margin-block: .9rem; }
+  section { padding-block-start: 24px; margin-block-end: 28px; }
+  h2 { font-size: 1.4rem; }
+}
+
+@media print {
+  .page { display: block; max-width: none; padding: 0; }
+  .profile { position: static; }
+  .portrait, nav, .skip-link { display: none; }
+  h1 br { display: none; }
+  .social-links { display: flex; flex-wrap: wrap; gap: .3rem 1rem; }
+  a { color: inherit; }
+  section { break-inside: auto; }
+  .entry, .publication { break-inside: avoid; }
+}

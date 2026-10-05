@@ -1,61 +1,55 @@
-### Hi There✌, I'm  Hrudayangam Mehta
-A Coder and a Machine learning enthusiast<br>
+# Hrudayangam Mehta
 
-<img align="left" width="260" height="260" src="https://media.giphy.com/media/USV0ym3bVWQJJmNu3N/giphy.gif">
+I am a PhD student in Computer Science at Binghamton University, advised by Jeremy Blackburn, and a research assistant in the iDRAMA Lab. I work on AI applications in computational social science, preference optimization, and AI alignment. My published research covers language-model evaluation, vision-language reasoning, and human-robot interaction.
 
-![robo hello](https://user-images.githubusercontent.com/51138087/93663951-39922d00-fa20-11ea-952b-48da7a6e5381.gif)<br>
+[Email](mailto:mehtahruday@gmail.com) · [GitHub](https://github.com/Hrudayangam) · [Google Scholar](https://scholar.google.com/citations?user=v1naXqEAAAAJ&hl=en) · [ResearchGate](https://www.researchgate.net/profile/Hrudayangam-Mehta/publications) · [LinkedIn](https://www.linkedin.com/in/hrudaymehta/) · [Website](https://hrudaymehta.vercel.app/)
 
+[Resume](resumes/Hrudayangam-Mehta-Resume.pdf)
 
-- 🔭 I’m currently working on Computer Vision applications and NLP models 
-- 🌱 I’m currently learning Open Cv, Deep learning, Best practices in Data science, DSA and playing with data
-- 👯 I’m looking to collaborate on data science releated projects
-- 💬 Ask me about  ML,DataScience,EDA methods,Python.
-- 😄 Pronouns: He/him
-- ⚡ Fun fact: I am a dedicated gamer as well
+## Research
 
-<br>
+- AI applications in computational social science
+- Preference optimization and AI alignment
+- Language-model evaluation and vision-language reasoning
 
-![NASA code](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif)
+## Publications
 
-![Hruday's github stats](https://github-readme-stats.vercel.app/api?username=Hrudayangam-Mehta&show_icons=true&theme=radical) 
+\* Equal contribution.
 
+**[From Woofs to Words: Towards Intelligent Robotic Guide Dogs with Verbal Communication](https://ojs.aaai.org/index.php/AAAI/article/view/41198)**<br>
+Yohei Hayamizu\*, David DeFazio\*, Hrudayangam Mehta\*, Zainab Altaweel, Jacqueline Choe, Chao Lin, Jake Juettner, Furui Xiao, Jeremy Blackburn, Shiqi Zhang<br>
+AAAI 2026.
 
+[Project](https://sites.google.com/view/woofs-words)
 
-### Experience ⚓ 
+**[Vision language models can parse floor plan maps](https://www.elspub.com/doi/10.55092/rl20250011)**<br>
+David DeFazio\*, Hrudayangam Mehta\*, Meng Wang\*, Ping Yang, Jeremy Blackburn, Shiqi Zhang<br>
+Robot Learning (ELSP), 2025.
 
--Training and internship at IIT kanpur in ML with IOT
+[Code](https://github.com/bu-air-lab/floor_plan_VLM) · [Project](https://sites.google.com/view/vlm-floorplan/)
 
-### Languages and tools :<img src="https://camo.githubusercontent.com/40dff491d4e8123af55298ef908faedb66c463e5/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f57556c706c634d704f43456d5447427442572f67697068792e676966" width="39px">
+[Additional accepted version on OpenReview](https://openreview.net/forum?id=uc6nPEx0M2) — venue and year: TBD.
 
+**[Evaluating Large Language Models for Detecting Antisemitism](https://aclanthology.org/2025.emnlp-main.1792/)**<br>
+Jay Patel, Hrudayangam Mehta, Jeremy Blackburn<br>
+EMNLP 2025.
 
-- Python
-- Anaconda
-- Jupyter notebooks
-- VS Code
-- C++
-- Scikit learn
-- Pycharm
-- Tensorflow
+[Code](https://github.com/idramalab/quantify-llm-explanations)
 
-### Contact me
+## Patent application
 
-<p align="left">
-   <a href="mailto:mehtahruday@gmail.com"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg" alt="gmail" height="50" width="35" /></a> &nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/hrudaymehta/" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="hrudaymehta height="60" width="35" /></a> &nbsp;&nbsp;
-  <a href="https://www.instagram.com/hruday_mehta/"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="" height="50" width="35" /></a> &nbsp;&nbsp;
-<!--     <a href="https://www.snapchat.com/add/hrudayangamnmeh"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/snapchat.svg" alt="bhanot_kushal" height="50" width="35" /></a> &nbsp;&nbsp; -->
+**[AI-Driven Floor Plan Understanding for Indoor/Outdoor Navigation](https://binghamton.technologypublisher.com/tech?title=AI-Driven_Floor_Plan_Understanding_for_Indoor%2fOutdoor_Navigation)**<br>
+Shiqi Zhang, David DeFazio, Hrudayangam Mehta, Jeremy Blackburn<br>
+U.S. provisional patent application 63/884,317, filed September 18, 2025.
 
-</p>
+## Education
 
-### Check out my coding skills
-<p align="left">
-  <a href="https://www.hackerrank.com/" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg" alt="" height="60" width="45" /></a> &nbsp;&nbsp;
-</p>
+- **PhD in Computer Science**, Binghamton University, SUNY — Aug 2024 - Present.
+- **MS in Computer Science**, Binghamton University, SUNY — Jan 2023 - May 2024.
+- **BTech in Computer Science and Engineering**, Vellore Institute of Technology, Bhopal — Jul 2019 - May 2023.
 
-### Extras🎈🎈
-- 📜 [My Resume](https://drive.google.com/file/d/1lZhCDE1Z1wzxYykElLFRghjDhHr_Z-qg/view?usp=sharing)
+## Technical skills
 
-
-<p align="center"> 
-❤️ Thank you for visiting my Github Profile ❤️</b>
-</p>
+- **Programming:** Python, SQL, C, C++, JavaScript, TypeScript.
+- **Machine learning:** LLM evaluation, vision-language models, classification, prompting and decoding experiments, error analysis, OpenCV.
+- **Data and software:** PostgreSQL, MongoDB, Faktory, Flask, Git, Linux, AWS.
