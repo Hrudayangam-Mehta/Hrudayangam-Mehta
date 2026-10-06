@@ -36,7 +36,11 @@ def main():
     (destination / "MAINTENANCE.txt").write_text(
         "This site is generated from the shared profile source in\n"
         "https://github.com/Hrudayangam-Mehta/Hrudayangam-Mehta\n\n"
-        "Edit content/profile.json and content/research-evidence.json there, then run:\n"
+        "Edit resumes/Hrudayangam-Mehta-Resume.tex directly for the resume.\n"
+        "Keep factual changes in content/profile.json for the website and CV too.\n"
+        "Verified publication metadata is in content/research-evidence.json.\n"
+        "Run:\n"
+        "  python scripts/build_latex_resume.py\n"
         "  python scripts/build_documents.py\n"
         "  python scripts/build_profile.py\n"
         "  python scripts/sync_portfolio.py PATH_TO_THIS_CHECKOUT\n\n"

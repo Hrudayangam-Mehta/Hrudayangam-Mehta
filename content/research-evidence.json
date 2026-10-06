@@ -36,6 +36,7 @@
       "pdf": "https://ojs.aaai.org/index.php/AAAI/article/download/41198/45159",
       "project": "https://sites.google.com/view/woofs-words",
       "verified_technical_summary": "Combined LLM dialogue, symbolic task planning, and plan/scene verbalization for a robotic guide dog. Evaluated task specification on 77 simulated service requests; the multi-turn system achieved 94.8% accuracy. Evaluated verbalization with visually impaired participants using a Unitree Go2 under operator-controlled motion.",
+      "contribution": "Integrates LLM dialogue with symbolic task planning to clarify navigation requests and verbalize route plans and surrounding scenes for robotic guide dogs.",
       "claim_limits": [
         "94.8% is simulated dialogue task-specification accuracy, not autonomous real-world navigation success.",
         "The human study used Wizard-of-Oz control; do not describe it as autonomous navigation trials.",
@@ -74,6 +75,7 @@
       "project": "https://sites.google.com/view/vlm-floorplan/",
       "code": "https://github.com/bu-air-lab/floor_plan_VLM",
       "verified_technical_summary": "Evaluated GPT-4o and Claude 3.5 Sonnet on floor-plan parsing and generation of navigation action sequences. Analyzed map size, task complexity, and label density, with up to 96% success on a reported nine-action navigation task setting; demonstrated the pipeline on a quadruped robot.",
+      "contribution": "Develops a vision-language pipeline that converts floor-plan images and start-goal prompts into navigation action sequences, evaluating spatial reasoning across map sizes, task complexities, and label densities.",
       "claim_limits": [
         "The 96% result is a particular experimental setting, not aggregate success across all maps.",
         "This publisher identifies the venue as a journal, not a conference."
@@ -100,6 +102,7 @@
       "pdf": "https://aclanthology.org/2025.emnlp-main.1792.pdf",
       "code": "https://github.com/idramalab/quantify-llm-explanations",
       "verified_technical_summary": "Evaluated eight open-source LLMs on policy-guided antisemitism detection using 11,315 annotated posts. Compared prompting and decoding strategies, introduced Guided-CoT, and measured semantic differences between generated explanations. Self-consistency used 30 inference samples per post; Guided-CoT improved positive-class F1 by 0.03-0.13 over zero-shot CoT in the reported comparisons.",
+      "contribution": "Introduces Guided-CoT prompting for policy-guided antisemitism detection, improving classification performance across eight open-source LLMs.",
       "claim_limits": [
         "Dataset was existing human-annotated data, not created entirely by this paper.",
         "Do not claim model pretraining, fine-tuning, kernel development, or sole authorship of the evaluation framework from this paper alone."

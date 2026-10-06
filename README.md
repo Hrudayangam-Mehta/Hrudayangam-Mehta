@@ -1,15 +1,15 @@
 # Hrudayangam Mehta
 
-I am a PhD student in Computer Science at Binghamton University, advised by Jeremy Blackburn, and a research assistant in the iDRAMA Lab. I work on AI applications in computational social science, preference optimization, and AI alignment. My published research covers language-model evaluation, vision-language reasoning, and human-robot interaction.
+I am a PhD student in Computer Science at Binghamton University, advised by Jeremy Blackburn, and a research assistant in the iDRAMA Lab. I work on vision-language model (VLM) alignment and preference optimization, and explore VLMs' video-annotation capabilities for computational social science research on social media. My published research covers language-model evaluation, vision-language reasoning, and human-robot interaction.
 
 [Email](mailto:mehtahruday@gmail.com) · [GitHub](https://github.com/Hrudayangam) · [Google Scholar](https://scholar.google.com/citations?user=v1naXqEAAAAJ&hl=en) · [ResearchGate](https://www.researchgate.net/profile/Hrudayangam-Mehta/publications) · [LinkedIn](https://www.linkedin.com/in/hrudaymehta/) · [Website](https://hrudaymehta.vercel.app/)
 
-[Resume](resumes/Hrudayangam-Mehta-Resume.pdf)
+[Resume](resumes/Hrudayangam-Mehta-Resume.pdf) · [LaTeX source](resumes/Hrudayangam-Mehta-Resume.tex)
 
 ## Research
 
-- AI applications in computational social science
-- Preference optimization and AI alignment
+- VLM video annotation for computational social science on social media (ongoing)
+- Preference optimization and VLM alignment
 - Language-model evaluation and vision-language reasoning
 
 ## Publications
@@ -20,11 +20,15 @@ I am a PhD student in Computer Science at Binghamton University, advised by Jere
 Yohei Hayamizu\*, David DeFazio\*, Hrudayangam Mehta\*, Zainab Altaweel, Jacqueline Choe, Chao Lin, Jake Juettner, Furui Xiao, Jeremy Blackburn, Shiqi Zhang<br>
 AAAI 2026.
 
+Integrates LLM dialogue with symbolic task planning to clarify navigation requests and verbalize route plans and surrounding scenes for robotic guide dogs.
+
 [Project](https://sites.google.com/view/woofs-words)
 
 **[Vision language models can parse floor plan maps](https://www.elspub.com/doi/10.55092/rl20250011)**<br>
 David DeFazio\*, Hrudayangam Mehta\*, Meng Wang\*, Ping Yang, Jeremy Blackburn, Shiqi Zhang<br>
 Robot Learning (ELSP), 2025.
+
+Develops a vision-language pipeline that converts floor-plan images and start-goal prompts into navigation action sequences, evaluating spatial reasoning across map sizes, task complexities, and label densities.
 
 [Code](https://github.com/bu-air-lab/floor_plan_VLM) · [Project](https://sites.google.com/view/vlm-floorplan/)
 
@@ -33,6 +37,8 @@ Robot Learning (ELSP), 2025.
 **[Evaluating Large Language Models for Detecting Antisemitism](https://aclanthology.org/2025.emnlp-main.1792/)**<br>
 Jay Patel, Hrudayangam Mehta, Jeremy Blackburn<br>
 EMNLP 2025.
+
+Introduces Guided-CoT prompting for policy-guided antisemitism detection, improving classification performance across eight open-source LLMs.
 
 [Code](https://github.com/idramalab/quantify-llm-explanations)
 

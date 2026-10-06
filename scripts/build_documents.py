@@ -1,8 +1,12 @@
-"""Build an ATS-friendly resume and an Anthology Fellows CV from shared facts.
+"""Build a resume DOCX snapshot and an Anthology Fellows CV from shared facts.
 
 Run: python scripts/build_documents.py
 Dependencies: python-docx, reportlab, pypdf. Local .tools/python is supported.
-Outputs are PDF, editable DOCX, and plain text in resumes/.
+The editable resume source is resumes/Hrudayangam-Mehta-Resume.tex.
+Build its PDF/text with scripts/build_latex_resume.py. This script never overwrites
+the LaTeX source or its compiled PDF/text. The resume DOCX is a separate snapshot
+of the shared profile, so later edits to the LaTeX file do not update that DOCX.
+The Anthology CV is generated as PDF, DOCX, and text in resumes/.
 """
 
 from __future__ import annotations
@@ -79,6 +83,8 @@ def header(profile, cv=False):
 def experience_blocks(profile, include_early=False, concise=False):
     blocks = [Block("section", "RESEARCH EXPERIENCE")]
     for item in profile["experience"]:
+        if not item.get("include_in_documents", True):
+            continue
         if not include_early and "Intern" in item["title"]:
             continue
         organization = item["organization"]
@@ -91,8 +97,6 @@ def experience_blocks(profile, include_early=False, concise=False):
         if item.get("dates"):
             blocks.append(Block("meta", esc(item["dates"])))
         bullets = item["bullets"]
-        if concise and "AIR" in organization:
-            bullets = bullets[:2]
         for bullet in bullets:
             blocks.append(Block("bullet", esc(bullet)))
     return blocks
@@ -143,17 +147,12 @@ def make_resume(profile, evidence):
     blocks += experience_blocks(profile, concise=True)
     blocks.append(Block("section", "SELECTED RESEARCH AND PUBLICATIONS"))
     publications = {item["id"]: item for item in evidence["publications"]}
-    projects = {item["url"]: item for item in profile["projects"]}
     selection = ["antisemitism-emnlp-2025", "floorplan-journal-2025", "woofs-words-2026"]
     for key in selection:
         paper = publications[key]
-        text = projects[paper["url"]]["bullets"][0]
-        if profile["name"] in paper.get("equal_contribution", []):
-            text = "Equal contribution. " + text
         blocks.append(Block("entry", link(paper["title"], paper["url"])))
         blocks.append(Block("meta", esc(paper["venue_short"])))
-        blocks.append(Block("body", esc(text)))
-    blocks += patent_blocks(evidence, concise=True)
+        blocks.append(Block("body", esc(paper["contribution"])))
     blocks += skill_blocks(profile)
     blocks += education_blocks(profile, concise=True)
     return blocks
@@ -168,9 +167,8 @@ def make_cv(profile, evidence):
         blocks.append(Block("meta", esc(project["description"])))
         for bullet in project["bullets"]:
             blocks.append(Block("bullet", esc(bullet)))
-    blocks += skill_blocks(profile)
     blocks.append(Block("pagebreak"))
-    blocks.append(Block("section", "PUBLICATIONS"))
+    blocks.append(Block("section", "SELECTED PUBLICATIONS"))
     blocks.append(Block("meta", "* Equal contribution."))
     for paper in evidence["publications"]:
         blocks.append(Block("entry", link(paper["title"], paper["url"])))
@@ -189,6 +187,7 @@ def make_cv(profile, evidence):
             journal += f', article {paper["article_number"]}'
         journal += f'. {paper["year"]}.'
         blocks.append(Block("body", esc(journal)))
+        blocks.append(Block("body", bold("Contribution: ") + esc(paper["contribution"])))
         links = [link("DOI: " + paper["doi"], "https://doi.org/" + paper["doi"])]
         if paper.get("code"):
             links.append(link("Code", paper["code"]))
@@ -201,7 +200,8 @@ def make_cv(profile, evidence):
                 blocks.append(Block("meta", link("Additional accepted version: OpenReview", alternate["url"]) + ". Venue/year: TBD."))
     blocks += patent_blocks(evidence)
     blocks += education_blocks(profile)
-    internships = [item for item in profile["experience"] if "Intern" in item["title"]]
+    blocks += skill_blocks(profile)
+    internships = [item for item in profile["experience"] if "Intern" in item["title"] and item.get("include_in_documents", True)]
     if internships:
         blocks.append(Block("section", "EARLIER EXPERIENCE"))
         for item in internships:
@@ -397,7 +397,7 @@ def verify(pdf_path, docx_path, expected_pages, blocks):
     for term in ["Hrudayangam Mehta", "EMNLP", "63/884,317", "Jeremy Blackburn"]:
         if term not in extracted:
             raise RuntimeError(f"Missing searchable PDF text: {term}")
-    for term in ["preprint", "Intrusion Detection", "Instruction Pipeline Simulator", "enthusiast"]:
+    for term in ["preprint", "Intrusion Detection", "Instruction Pipeline Simulator", "enthusiast", "iSmriti"]:
         if term.lower() in extracted.lower():
             raise RuntimeError(f"Unexpected legacy text: {term}")
     doc = Document(docx_path)
@@ -423,8 +423,19 @@ def main():
     output = ROOT / "resumes"
     output.mkdir(exist_ok=True)
     report = []
+    # Keep the hand-edited .tex and its PDF/text authoritative for the resume.
+    resume_blocks = make_resume(profile, evidence)
+    resume_docx = output / "Hrudayangam-Mehta-Resume.docx"
+    write_docx(resume_docx, resume_blocks, profile)
+    doc = Document(resume_docx)
+    doc_text = "\n".join(paragraph.text for paragraph in doc.paragraphs)
+    if doc.tables or "ismriti" in doc_text.lower():
+        raise RuntimeError("Unexpected layout table or excluded experience in resume DOCX")
+    for block in resume_blocks:
+        if re.sub(r"\s+", "", strip_markup(block.text)) not in re.sub(r"\s+", "", doc_text):
+            raise RuntimeError(f"Missing DOCX content: {strip_markup(block.text)}")
+    report.append({"docx": resume_docx.name, "source": "Shared-profile snapshot; LaTeX resume PDF is built separately", "docx_tables": 0, "all_content_verified": True})
     for slug, blocks, cv, pages in [
-        ("Hrudayangam-Mehta-Resume", make_resume(profile, evidence), False, 1),
         ("Hrudayangam-Mehta-Anthology-CV", make_cv(profile, evidence), True, 2),
     ]:
         write_pdf(output / (slug + ".pdf"), blocks, profile, cv)
