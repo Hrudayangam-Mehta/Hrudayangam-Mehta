@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "name": "Hrudayangam Mehta",
   "display_name": "Hrudayangam Mehta",
   "short_name": "Hruday Mehta",
@@ -8,8 +8,8 @@
   "location": "Binghamton, New York",
   "headline": "PhD student in Computer Science",
   "affiliation": "Binghamton University",
-  "summary": "I am a PhD student in Computer Science at Binghamton University, advised by Jeremy Blackburn, and a research assistant in the iDRAMA Lab. I work on AI applications in computational social science, preference optimization, and AI alignment. My published research covers language-model evaluation, vision-language reasoning, and human-robot interaction.",
-  "anthology_summary": "PhD researcher in the iDRAMA Lab at Binghamton University, advised by Jeremy Blackburn. Work focuses on LLM evaluation, AI applications in computational social science, preference optimization, and AI alignment. Published research examines policy-guided classification, spatial reasoning, and dialogue task specification.",
+  "summary": "I am a PhD student in Computer Science at Binghamton University, advised by Jeremy Blackburn, and a research assistant in the iDRAMA Lab. I work on vision-language model (VLM) alignment and preference optimization, and explore VLMs' video-annotation capabilities for computational social science research on social media. My published research covers language-model evaluation, vision-language reasoning, and human-robot interaction.",
+  "anthology_summary": "PhD researcher in the iDRAMA Lab at Binghamton University, advised by Jeremy Blackburn. Current work focuses on VLM alignment, preference optimization, and VLM-based annotation of social-media videos for computational social science. Published research examines policy-guided classification, spatial reasoning, and dialogue task specification.",
   "links": [
     {
       "label": "Email",
@@ -99,15 +99,16 @@
     {
       "organization": "iDRAMA Lab, Binghamton University",
       "title": "Research Assistant",
-      "dates": "TBD - Present",
+      "dates": "May 2024 - Present",
       "location": "Binghamton, New York",
       "bullets": [
-        "Research AI applications in computational social science, preference optimization, and AI alignment.",
-        "Co-authored EMNLP 2025 research evaluating eight open-source LLMs on policy-guided classification and generated explanations.",
+        "Current research: vision-language model (VLM) alignment and preference optimization for AI applications in computational social science.",
+        "Explore VLMs' capabilities for annotating social-media videos to support computational social science research (in progress).",
+        "Co-authored Evaluating Large Language Models for Detecting Antisemitism (EMNLP 2025), evaluating eight open-source LLMs on policy-guided classification and generated explanations.",
         "Co-authored From Woofs to Words: Towards Intelligent Robotic Guide Dogs with Verbal Communication (AAAI 2026; equal contribution), combining LLM dialogue, symbolic planning, and verbal explanations.",
         "Co-inventor of AI-Driven Floor Plan Understanding for Indoor/Outdoor Navigation, U.S. provisional patent application 63/884,317, filed September 18, 2025."
       ],
-      "source": "Current role, interests, and placement of AAAI paper/patent confirmed by user, 2026-10-05; verified publication and university patent records"
+      "source": "May 2024 start date and current VLM alignment/video-annotation research confirmed by user, 2026-10-06; placement of AAAI paper/patent confirmed by user, 2026-10-05; verified publication and university patent records"
     },
     {
       "organization": "Autonomous Intelligent Robotics (AIR) Group, Binghamton University",
@@ -116,7 +117,8 @@
       "location": "Binghamton, New York",
       "bullets": [
         "Integrated speech-to-text into a robotic guide-dog interface for spoken interaction.",
-        "Co-authored Vision language models can parse floor plan maps (Robot Learning (ELSP), 2025; equal contribution), evaluating GPT-4o and Claude 3.5 Sonnet on floor-plan parsing and navigation action sequences."
+        "Co-authored Vision language models can parse floor plan maps (Robot Learning (ELSP), 2025; equal contribution), evaluating GPT-4o and Claude 3.5 Sonnet on floor-plan parsing and navigation action sequences.",
+        "Analyzed navigation failures across map size, task complexity, and label density in the floor-plan study."
       ],
       "source": "AIR end date and placement of floor-plan paper confirmed by user, 2026-10-05; verified Robot Learning publication"
     },
@@ -163,7 +165,6 @@
     }
   ],
   "confirmation_needed": [
-    "Start date for current iDRAMA Research Assistant role: TBD.",
     "Exact venue and year for the additional accepted OpenReview version: TBD."
   ],
   "advisor": {

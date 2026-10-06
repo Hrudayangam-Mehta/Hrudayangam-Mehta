@@ -97,8 +97,6 @@ def experience_blocks(profile, include_early=False, concise=False):
         if item.get("dates"):
             blocks.append(Block("meta", esc(item["dates"])))
         bullets = item["bullets"]
-        if concise and "AIR" in organization:
-            bullets = bullets[:2]
         for bullet in bullets:
             blocks.append(Block("bullet", esc(bullet)))
     return blocks
@@ -154,6 +152,7 @@ def make_resume(profile, evidence):
         paper = publications[key]
         blocks.append(Block("entry", link(paper["title"], paper["url"])))
         blocks.append(Block("meta", esc(paper["venue_short"])))
+        blocks.append(Block("body", esc(paper["contribution"])))
     blocks += skill_blocks(profile)
     blocks += education_blocks(profile, concise=True)
     return blocks
@@ -168,9 +167,8 @@ def make_cv(profile, evidence):
         blocks.append(Block("meta", esc(project["description"])))
         for bullet in project["bullets"]:
             blocks.append(Block("bullet", esc(bullet)))
-    blocks += skill_blocks(profile)
     blocks.append(Block("pagebreak"))
-    blocks.append(Block("section", "PUBLICATIONS"))
+    blocks.append(Block("section", "SELECTED PUBLICATIONS"))
     blocks.append(Block("meta", "* Equal contribution."))
     for paper in evidence["publications"]:
         blocks.append(Block("entry", link(paper["title"], paper["url"])))
@@ -189,6 +187,7 @@ def make_cv(profile, evidence):
             journal += f', article {paper["article_number"]}'
         journal += f'. {paper["year"]}.'
         blocks.append(Block("body", esc(journal)))
+        blocks.append(Block("body", bold("Contribution: ") + esc(paper["contribution"])))
         links = [link("DOI: " + paper["doi"], "https://doi.org/" + paper["doi"])]
         if paper.get("code"):
             links.append(link("Code", paper["code"]))
@@ -201,6 +200,7 @@ def make_cv(profile, evidence):
                 blocks.append(Block("meta", link("Additional accepted version: OpenReview", alternate["url"]) + ". Venue/year: TBD."))
     blocks += patent_blocks(evidence)
     blocks += education_blocks(profile)
+    blocks += skill_blocks(profile)
     internships = [item for item in profile["experience"] if "Intern" in item["title"] and item.get("include_in_documents", True)]
     if internships:
         blocks.append(Block("section", "EARLIER EXPERIENCE"))

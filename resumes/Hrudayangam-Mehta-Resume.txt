@@ -3,23 +3,31 @@ Binghamton, NY | mehtahruday@gmail.com | +1 (607) 601-0523
 github.com/Hrudayangam | linkedin.com/in/hrudaymehta | hrudaymehta.vercel.app
 RESEARCH EXPERIENCE
 Research Assistant
-iDRAMA Lab, Binghamton University | TBD – Present
-• Research AI applications in computational social science, preference optimization, and AI alignment.
-• Co-authored Evaluating Large Language Models for Detecting Antisemitism (EMNLP 2025): evaluated
-eight open-source LLMs on 11,315 annotated posts; compared prompting and decoding strategies and
-analyzed classification errors.
-• Co-authored From Woofs to Words: Towards Intelligent Robotic Guide Dogs with Verbal Communication
-(AAAI 2026; equal contribution), combining LLM dialogue, symbolic task planning, and verbal
-explanations. The multi-turn system achieved 94.8% task-specification accuracy on 77 simulated service
-requests.
+iDRAMA Lab, Binghamton University | May 2024 – Present
+• Current research: preference optimization and AI alignment, including vision-language model (VLM)
+alignment.
+• In progress: exploring VLM-based video annotation for computational social science on social media.
+• Co-authored policy-guided LLM evaluation research (EMNLP 2025).
+• Co-authored From Woofs to Words (AAAI 2026; equal contribution).
 • Co-inventor of AI-Driven Floor Plan Understanding for Indoor/Outdoor Navigation. U.S. provisional
 patent application 63/884,317, filed September 18, 2025.
 Graduate Research Assistant
 AIR Group, Binghamton University | Aug 2023 – May 2024
 • Integrated speech-to-text into a robotic guide-dog interface for spoken interaction.
-• Co-authored Vision language models can parse floor plan maps (Robot Learning (ELSP), 2025; equal
-contribution). Evaluated GPT-4o and Claude 3.5 Sonnet on floor-plan parsing and navigation action
-sequences; analyzed failures across map size, task complexity, and label density.
+• Related publication: Vision language models can parse floor plan maps (Robot Learning (ELSP), 2025;
+co-author, equal contribution).
+• Evaluated GPT-4o and Claude 3.5 Sonnet for floor-plan navigation; analyzed failures across map size, task
+complexity, and label density.
+SELECTED PUBLICATIONS
+From Woofs to Words: Towards Intelligent Robotic Guide Dogs with Verbal Communication. AAAI 2026.
+The paper integrates LLM dialogue, symbolic planning, and verbalization; its system achieved 94.8%
+task-specification accuracy on 77 simulated service requests.
+Evaluating Large Language Models for Detecting Antisemitism. EMNLP 2025.
+The paper introduces Guided-CoT prompting for policy-guided antisemitism detection, improving
+classification performance across eight open-source LLMs.
+Vision language models can parse floor plan maps. Robot Learning (ELSP), 2025.
+The paper develops a pipeline from floor-plan images and start-goal prompts to navigation actions, evaluating
+spatial reasoning across map sizes, task complexities, and label densities.
 EDUCATION
 PhD in Computer Science, Binghamton University, SUNY
 Aug 2024 – Present | Adviser: Jeremy Blackburn; iDRAMA Lab
